@@ -449,6 +449,7 @@ h1 {
 
     .block-2-img img, .block-4-img img {
         width: 284px;
+	height: 100%;
     }
 }
 
