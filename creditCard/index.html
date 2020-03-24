@@ -23,7 +23,7 @@
                         <h1 class="hero-heading">Сколько платить по&nbsp;кредитной карте?</h1>
                         <h2 class="margin-bottom-32">Узнайте сумму очередного платежа и&nbsp;задолженности в&nbsp;мобильном банке </h2>
                         <div class="card-buttons">
-                            <a class="btn-store" href="https://apps.apple.com/ru/app/%D0%BE%D1%82%D0%BF-%D0%B1%D0%B0%D0%BD%D0%BA/id1483041733" role="button">
+                            <a class="btn-store btn-apple" href="https://apps.apple.com/ru/app/%D0%BE%D1%82%D0%BF-%D0%B1%D0%B0%D0%BD%D0%BA/id1483041733" role="button">
                                 <img src="img/app_store.svg" class="btn-apple-img"/>
                             </a>
                             <a class="btn-store btn-google" href="https://play.google.com/store/apps/details?id=ru.otpbank.mobile&hl=ru" role="button">
@@ -73,7 +73,7 @@
                         </div>
                         <div class="links">
                             <div class="card-buttons">
-                                <a class="btn-store" href="https://apps.apple.com/ru/app/%D0%BE%D1%82%D0%BF-%D0%B1%D0%B0%D0%BD%D0%BA/id1483041733" role="button">
+                                <a class="btn-store btn-apple" href="https://apps.apple.com/ru/app/%D0%BE%D1%82%D0%BF-%D0%B1%D0%B0%D0%BD%D0%BA/id1483041733" role="button">
                                     <img src="img/app_store.svg" class="btn-apple-img"/>
                                 </a>
                                 <a class="btn-store btn-google" href="https://play.google.com/store/apps/details?id=ru.otpbank.mobile&hl=ru" role="button">
@@ -153,5 +153,12 @@
                 <span class="footer-span">АО «ОТП Банк» Генеральная лицензия Банка России №2766</span>
             </div>
         </div>
+        <script>
+            if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                document.querySelectorAll('.btn-google').forEach(elem => elem.style.display = 'none')
+            } else if (/Android/i.test(navigator.userAgent)) {
+                document.querySelectorAll('.btn-apple').forEach(elem => elem.style.display = 'none')
+            }
+        </script>
     </body>
 </html>
