@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Squad';
+    src: url('../fonts/Squad-Heavy.eot');
+    src: local('Squad Heavy'), local('Squad-Heavy'),
+        url('../fonts/Squad-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Squad-Heavy.woff2') format('woff2'),
+        url('../fonts/Squad-Heavy.woff') format('woff'),
+        url('../fonts/Squad-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
